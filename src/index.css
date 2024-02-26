@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+button {
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(97, 32, 158);
+    cursor: pointer;
+}
