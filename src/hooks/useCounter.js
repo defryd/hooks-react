@@ -17,12 +17,27 @@ export const useCounter = (initialValue = 10) => {
         setCounter(initialValue);
     }
 
+    const increment2 = (value = 2) => {
+        setCounter(counter + value);
+    }
+
+    const increment3 = (value = 3) => {
+        setCounter(counter + value);
+    }
+
+    const increment5 = (value = 5) => {
+        setCounter(counter + value);
+    }
+
 
     return {
         counter,
         increment,
         decrement,
         reset,
+        increment2,
+        increment3,
+        increment5
     }
 
 }
