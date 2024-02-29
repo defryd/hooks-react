@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { Message } from "./Message";
 import { useForm } from "../hooks/useForm";
 
@@ -20,14 +19,14 @@ export const FormWithCustomHook = () => {
     //     });
     // }
 
-    const {formState , onInputChange, onResetForm, username, email, password} = useForm({
+    const { onInputChange, onResetForm, username, email, password } = useForm({
         username: '',
         email: '',
-        password:''
+        password: ''
     });
 
     // const {username, email, password} = formState;
- 
+
     // useEffect(() => {
     //     console.log('Effect');
     // }, []);
@@ -68,7 +67,7 @@ export const FormWithCustomHook = () => {
                 onChange={onInputChange}
             />
 
-<input
+            <input
                 type="password"
                 className="form-control mt-2"
                 placeholder="Password"
